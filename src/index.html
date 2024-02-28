@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/output.css" />
+    <title>Search App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex w-full">
+      <select
+        id="selectInput"
+        class="block text-white focus:ring-0 p-6 opacity-70 ps-10 text-sm rounded-s-lg focus:outline-none focus:border-none bg-gray-700 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+      >
+        <option value="" disabled selected hidden>Engine</option>
+        <option class="bg-gray-700 hover:bg-gray-800 text-md" value="Google">
+          Google
+        </option>
+        <option class="bg-gray-700 hover:bg-gray-800 text-md" value="Youtube">
+          Youtube
+        </option>
+        <option class="bg-gray-700 hover:bg-gray-800 text-md" value="Yandex">
+          Yandex
+        </option>
+        <option class="bg-gray-700 hover:bg-gray-800 text-md" value="Twitter">
+          Twitter
+        </option>
+      </select>
+
+      <label
+        for="default-search"
+        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+      >
+        Search
+      </label>
+      <div class="relative w-full">
+        <div
+          class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+        >
+          <svg
+            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="search"
+          id="inputSearch"
+          class="block text-white w-full h-[69.6px] opacity-70 p-6 ps-10 text-sm border-none rounded-e-lg focus:outline-none focus:border-none bg-gray-700 dark:bg-gray-700 dark:border-gray-600 focus:ring-0 dark:placeholder-gray-400 dark:text-white"
+          placeholder="Search..."
+          required
+        />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./scripts/front-end/index.js"></script>
+  </body>
+</html>

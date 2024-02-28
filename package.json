@@ -1,0 +1,27 @@
+{
+  "name": "search-tool",
+  "version": "1.0.0",
+  "description": "Search tool engine",
+  "main": "./src/scripts/electron/main.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/assets/styles/input.css -o ./src/assets/styles/output.css --watch",
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "electron": "^29.0.1",
+    "electron-builder": "^24.12.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  },
+  "build": {
+    "appId": "com.danilogomes.search",
+    "win": {
+      "icon": "./src/assets/lupin.png"
+    }
+  }
+}
